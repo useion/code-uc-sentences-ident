@@ -16,8 +16,12 @@ var argv = require('minimist')(process.argv.slice(2)),
     fs = require("fs"),
     utils = require("./useion/lib/helpers/utils.js"),
     jsfile = require('jsonfile');
-
 var exec = require('child_process').exec;
+var execute = function(command, callback){
+    // 10 MB
+    exec(command, {maxBuffer: 1024 * 1024 * 10}, function(error, stdout, stderr){ callback(error, stdout); });
+};
+
 var parser = require("./useion/lib/parser");
 
 var method = argv['method'], //"direct",
@@ -31,43 +35,58 @@ fstools.walk(ucPath, function (err, ucFiles) {
             res = {},
             inSeq = function (uc, code) { return function () {
                 return new Promise(function (f, r) {
-                    var cmd = "node lib/compare.js -m "+method+" -s "+comparison+" -u "+uc+" -c "+code+" -l "+argv['lang']+" -o "+argv['issue-owner']+" -r "+argv['issue-repo'];
+                    var cmd = "node lib/promises.js --uc "+uc+" -l "+argv['lang']+" --owner "+argv['issue-owner']+" --repo "+argv['issue-repo'];
                     console.log("executing "+cmd);
 
-                    exec(cmd, function(error, stdout, stderr) {
-                        var useCaseParser = new parser.Usecase();
-                        var parser_usecase = useCaseParser.parse(uc);
-                        var usecase_name = parser_usecase.name;
-
-                        var shouldGenerate = usecase_name.replace(" ","")+"_"+method+"_"+comparison+"_"+code.replace(/\//g,"_").replace(".","_")+".json";
-
-                        var r = JSON.parse(fs.readFileSync(shouldGenerate, "utf-8"));
-
-                        if (!(usecase_name in res))
-                            res[usecase_name] = {name: usecase_name, path: path.resolve(uc), steps: {}};
-
-                        for (var i in r['steps']) {
-
-                            if (!(r['steps'][i].stepNumber in res[usecase_name]['steps']))
-                                res[usecase_name]['steps'][r['steps'][i].stepNumber] = {
-                                    stepNumber: r['steps'][i].stepNumber,
-                                    step: r['steps'][i].step,
-                                    methods: []
-                                };
-
-                            for (var j in r['steps'][i]['methods']) {
-                                r['steps'][i]['methods'][j]['path'] = path.resolve(code);
-                                res[usecase_name]['steps'][r['steps'][i].stepNumber]['methods'].push(r['steps'][i]['methods'][j]);
-                            }
-                        }
+                    execute(cmd, function(error, stdout, stderr) {
 
 
-                        f();
+
+                        var cmd = "node lib/compare.js -m "+method+" -s "+comparison+" -u "+uc+" -c "+code+" -l "+argv['lang']+" -o "+argv['issue-owner']+" -r "+argv['issue-repo'];
+                        console.log("executing "+cmd);
+
+                        execute(cmd, function(error, stdout, stderr) {
+
+                            console.log(error);
+
+                            var useCaseParser = new parser.Usecase();
+                            var parser_usecase = useCaseParser.parse(uc);
+                            var usecase_name = parser_usecase.name;
+
+                            var shouldGenerate = usecase_name.replace(" ","")+"_"+method+"_"+comparison+"_"+code.replace(/\//g,"_").replace(".","_")+".json";
+
+                            execute("sync", function(error, stdout, stderr) {
+
+
+
+                                var r = JSON.parse(fs.readFileSync(shouldGenerate, "utf-8"));
+
+                                if (!(usecase_name in res))
+                                    res[usecase_name] = {name: usecase_name, path: path.resolve(uc), steps: {}};
+
+                                for (var i in r['steps']) {
+
+                                    if (!(r['steps'][i].stepNumber in res[usecase_name]['steps']))
+                                        res[usecase_name]['steps'][r['steps'][i].stepNumber] = {
+                                            stepNumber: r['steps'][i].stepNumber,
+                                            step: r['steps'][i].step,
+                                            methods: []
+                                        };
+
+                                    for (var j in r['steps'][i]['methods']) {
+                                        r['steps'][i]['methods'][j]['path'] = path.resolve(code);
+                                        res[usecase_name]['steps'][r['steps'][i].stepNumber]['methods'].push(r['steps'][i]['methods'][j]);
+                                    }
+                                }
+
+
+                                f();
+
+                            });
+                        });
 
 
                     });
-
-
                 });
             } };
 

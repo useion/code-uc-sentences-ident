@@ -247,8 +247,11 @@ def word_order_similarity(sentence_1, sentence_2):
     return 1.0 - (np.linalg.norm(r1 - r2) / np.linalg.norm(r1 + r2))
 
 
-######################### overall similarity ##########################
+######################## overall similarity ##########################
 
+from functools32 import lru_cache
+
+@lru_cache(maxsize=999999)
 def similarity(sentence_1, sentence_2, info_content_norm):
     """
     Calculate the semantic similarity between two sentences. The last 

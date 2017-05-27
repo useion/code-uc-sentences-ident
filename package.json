@@ -10,12 +10,16 @@
     "node": ">=4.2.6"
   },
   "dependencies": {
+    "aguid": "^2.0.0",
     "excel4node": "^1.2.1",
     "jsonfile": "^3.0.0",
     "minimist": "^1.2.0",
+    "parse-diff": "^0.4.0",
     "promise": "^7.1.1",
     "promise-sequential": "^1.1.1",
+    "request": "^2.81.0",
     "similarity": "^1.1.1",
+    "sort-by": "^1.2.0",
     "sqlite3": "^3.1.8",
     "zerorpc": "^0.9.7"
   },
