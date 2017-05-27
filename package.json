@@ -1,0 +1,26 @@
+{
+  "name": "sim-adv-met",
+  "version": "0.0.1",
+  "repository": "",
+  "description": "",
+  "private": true,
+  "main": "compare.js",
+  "author": "Peter Berta, Michal Bystricky",
+  "engines": {
+    "node": ">=4.2.6"
+  },
+  "dependencies": {
+    "excel4node": "^1.2.1",
+    "jsonfile": "^3.0.0",
+    "minimist": "^1.2.0",
+    "promise": "^7.1.1",
+    "promise-sequential": "^1.1.1",
+    "similarity": "^1.1.1",
+    "sqlite3": "^3.1.8",
+    "zerorpc": "^0.9.7"
+  },
+  "keywords": [
+    "NLTK",
+    "Use Case"
+  ]
+}

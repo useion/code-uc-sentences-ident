@@ -1,0 +1,182 @@
+{
+  "Change Password": {
+    "name": "Change Password",
+    "path": "/home/dash/Projects/berta/example/spec/Account/ChangePassword.md",
+    "steps": {
+      "1.": {
+        "stepNumber": "1.",
+        "step": "Customer selects to change password",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.4375
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.4375
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.4375
+          }
+        ]
+      },
+      "2.": {
+        "stepNumber": "2.",
+        "step": "System prompts for password twice",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.2413793103448276
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.2413793103448276
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.2413793103448276
+          }
+        ]
+      },
+      "3.": {
+        "stepNumber": "3.",
+        "step": "Customer enters the password twice",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.4
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.4
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.4
+          }
+        ]
+      },
+      "4.": {
+        "stepNumber": "4.",
+        "step": "System checks the entered passwords are the same (are typed correctly)",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.23404255319148937
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.23404255319148937
+          }
+        ]
+      },
+      "5.": {
+        "stepNumber": "5.",
+        "step": "System saves the password",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.2857142857142857
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.2857142857142857
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.2857142857142857
+          }
+        ]
+      },
+      "4a.": {
+        "stepNumber": "4a.",
+        "step": "Password is not between 4 and 20 characters",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.2727272727272727
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "add()",
+            "similarity": 0.2727272727272727
+          }
+        ]
+      },
+      "4a1.": {
+        "stepNumber": "4a1.",
+        "step": "System notifies about the password requirements",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.2972972972972973
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.2972972972972973
+          }
+        ]
+      },
+      "4a2.": {
+        "stepNumber": "4a2.",
+        "step": "Continue to step 2",
+        "methods": [
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.46153846153846156
+          },
+          {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
+            "className": "ControllerAccountWishList",
+            "methodName": "index()",
+            "similarity": 0.46153846153846156
+          }
+        ]
+      }
+    }
+  }
+}
