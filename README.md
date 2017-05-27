@@ -49,6 +49,10 @@ Here are examples how to run them:
     python nltkinterface/rpc-server.py &
     node traverse.js --method METHOD --similarity SIMILARITY --uc-path UC_PATH --code-path CODE_PATH --lang LANG --issue-owner IO --issue-repo IR
 
+Another one:
+
+    node traverse.js --uc-path example/spec --code-path example/implementation --method direct --similarity advanced --lang php --issue-owner opencart --issue-repo opencart
+
 The legend:
 
 | UC_PATH   | path to the use cases      |

@@ -31,7 +31,7 @@ fstools.walk(ucPath, function (err, ucFiles) {
             res = {},
             inSeq = function (uc, code) { return function () {
                 return new Promise(function (f, r) {
-                    var cmd = "node lib/compare.js -m "method" -s "+comparison+" -u "+uc+" -c "+code+" -l "+argv['lang']+" -o "+argv['issue-owner']+" -r "+argv['issue-repo'];
+                    var cmd = "node lib/compare.js -m "+method+" -s "+comparison+" -u "+uc+" -c "+code+" -l "+argv['lang']+" -o "+argv['issue-owner']+" -r "+argv['issue-repo'];
                     console.log("executing "+cmd);
 
                     exec(cmd, function(error, stdout, stderr) {
