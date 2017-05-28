@@ -3,7 +3,9 @@
 The method of calculating similarity can be chosen (parameter --method):
 
 - direct: based on sentences from use cases and code
-- issue: based on relations between issues and commits
+- issue: based on relations between issues and commits from GitHub
+
+In case of the issue method, change GitHub token here: `lib/githubAPI.js`
 
 The similarity algorithm can be chosen (parameter --similarity):
 
@@ -15,10 +17,12 @@ The similarity algorithm can be chosen (parameter --similarity):
 ## Dependencies
 
     npm install
+    mkdir cache
     git clone https://github.com/useion/useion.git
     cd useion
     npm install
     sudo pip2.7 install zerorpc
+    sudo pip2.7 install functools32
 
 ## NLTK
 
