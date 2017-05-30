@@ -1,181 +1,1237 @@
 {
   "Change Password": {
-    "name": "Change Password",
     "path": "/home/dash/Projects/berta/example/spec/Account/ChangePassword.md",
+    "name": "Change Password",
     "steps": {
-      "1.": {
+      "Customer selects to change password": {
         "stepNumber": "1.",
         "step": "Customer selects to change password",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
+        "methods": {
+          "ControllerAccountRegister-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
             "methodName": "index()",
             "similarity": 0.4375
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.4375
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.4375
           }
-        ]
+        }
       },
-      "2.": {
-        "stepNumber": "2.",
-        "step": "System prompts for password twice",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "country()",
-            "similarity": 0.2413793103448276
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.2413793103448276
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.2413793103448276
-          }
-        ]
-      },
-      "3.": {
-        "stepNumber": "3.",
-        "step": "Customer enters the password twice",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "index()",
-            "similarity": 0.4
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.4
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.4
-          }
-        ]
-      },
-      "4.": {
-        "stepNumber": "4.",
-        "step": "System checks the entered passwords are the same (are typed correctly)",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "country()",
-            "similarity": 0.23404255319148937
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.23404255319148937
-          }
-        ]
-      },
-      "5.": {
-        "stepNumber": "5.",
-        "step": "System saves the password",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "index()",
-            "similarity": 0.2857142857142857
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.2857142857142857
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.2857142857142857
-          }
-        ]
-      },
-      "4a.": {
-        "stepNumber": "4a.",
-        "step": "Password is not between 4 and 20 characters",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "country()",
-            "similarity": 0.2727272727272727
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.2727272727272727
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "add()",
-            "similarity": 0.2727272727272727
-          }
-        ]
-      },
-      "4a1.": {
-        "stepNumber": "4a1.",
-        "step": "System notifies about the password requirements",
-        "methods": [
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
-            "className": "ControllerAccountAccount",
-            "methodName": "index()",
-            "similarity": 0.2972972972972973
-          },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
-            "methodName": "index()",
-            "similarity": 0.2972972972972973
-          }
-        ]
-      },
-      "4a2.": {
+      "Continue to step 2": {
         "stepNumber": "4a2.",
         "step": "Continue to step 2",
-        "methods": [
-          {
+        "methods": {
+          "ControllerAccountRegister-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "customfield()",
+            "similarity": 0.46153846153846156
+          }
+        }
+      }
+    }
+  },
+  "Register Account": {
+    "path": "/home/dash/Projects/berta/example/spec/Account/RegisterAccount.md",
+    "name": "Register Account",
+    "steps": {
+      "Customer selects to register a new account": {
+        "stepNumber": "1.",
+        "step": "Customer selects to register a new account",
+        "methods": {
+          "ControllerExtensionTotalReward-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "index()",
+            "similarity": 0.5151515151515151
+          },
+          "ControllerExtensionTotalReward-reward()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "reward()",
+            "similarity": 0.5151515151515151
+          }
+        }
+      },
+      "System prompts for personal details, address, password, newsletter subscription, and another custom fields": {
+        "stepNumber": "2.",
+        "step": "System prompts for personal details, address, password, newsletter subscription, and another custom fields",
+        "methods": {
+          "ControllerCheckoutPaymentAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "save()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerCheckoutPaymentAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "index()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerCheckoutShippingAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "index()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerCheckoutShippingAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "save()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerAccountRegister-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "validate()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerCheckoutCheckout-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "customfield()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerAccountRegister-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "customfield()",
+            "similarity": 0.33766233766233766
+          },
+          "ControllerAccountRegister-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "index()",
+            "similarity": 0.33766233766233766
+          }
+        }
+      },
+      "Customer enters all the information": {
+        "stepNumber": "4.",
+        "step": "Customer enters all the information",
+        "methods": {
+          "ControllerAccountPassword-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "index()",
+            "similarity": 0.5185185185185185
+          }
+        }
+      },
+      "System creates a new account": {
+        "stepNumber": "5.",
+        "step": "System creates a new account",
+        "methods": {
+          "ControllerAccountAccount-index()": {
             "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
             "className": "ControllerAccountAccount",
             "methodName": "index()",
-            "similarity": 0.46153846153846156
+            "similarity": 0.34375
           },
-          {
-            "path": "/home/dash/Projects/berta/example/implementation/controller/account/wishlist.php",
-            "className": "ControllerAccountWishList",
+          "ControllerCheckoutCheckout-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "country()",
+            "similarity": 0.3333333333333333
+          },
+          "ControllerAccountAccount-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.3235294117647059
+          },
+          "ControllerCheckoutCheckout-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
             "methodName": "index()",
-            "similarity": 0.46153846153846156
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutCart-edit()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "edit()",
+            "similarity": 0.27586206896551724
+          },
+          "ControllerAccountOrder-info()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "info()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerAccountOrder-reorder()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "reorder()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerAccountPassword-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "validate()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutShippingMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutCart-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutCart-add()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "add()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutCart-remove()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "remove()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutPaymentMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "save()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutConfirm-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/confirm.php",
+            "className": "ControllerCheckoutConfirm",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutFailure-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/failure.php",
+            "className": "ControllerCheckoutFailure",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutPaymentMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerAccountOrder-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutSuccess-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/success.php",
+            "className": "ControllerCheckoutSuccess",
+            "methodName": "index()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutShippingMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "save()",
+            "similarity": 0.2727272727272727
+          },
+          "ModelCheckoutOrder-addOrder($data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "addOrder($data)",
+            "similarity": 0.2571428571428571
           }
-        ]
+        }
+      },
+      "System activates the account and logs the customer in": {
+        "stepNumber": "8.",
+        "step": "System activates the account and logs the customer in",
+        "methods": {
+          "ModelCheckoutOrder-addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)",
+            "similarity": 0.39473684210526316
+          }
+        }
+      }
+    }
+  },
+  "Place Order": {
+    "path": "/home/dash/Projects/berta/example/spec/Order/PlaceOrder.md",
+    "name": "Place Order",
+    "steps": {
+      "Customer selects to checkout": {
+        "stepNumber": "1.",
+        "step": "Customer selects to checkout",
+        "methods": {
+          "ControllerAccountPassword-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "index()",
+            "similarity": 0.52
+          },
+          "ControllerCheckoutPaymentAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "save()",
+            "similarity": 0.48
+          },
+          "ControllerCheckoutSuccess-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/success.php",
+            "className": "ControllerCheckoutSuccess",
+            "methodName": "index()",
+            "similarity": 0.48
+          },
+          "ModelAccountOrder-getOrder($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrder($order_id)",
+            "similarity": 0.48
+          },
+          "ModelAccountOrder-getTotalOrders()": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getTotalOrders()",
+            "similarity": 0.48
+          },
+          "ModelAccountOrder-getOrders($start = 0, $limit = 20)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrders($start = 0, $limit = 20)",
+            "similarity": 0.48
+          },
+          "ControllerCheckoutConfirm-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/confirm.php",
+            "className": "ControllerCheckoutConfirm",
+            "methodName": "index()",
+            "similarity": 0.48
+          },
+          "ControllerCheckoutShippingAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "save()",
+            "similarity": 0.48
+          },
+          "ControllerCheckoutCheckout-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "index()",
+            "similarity": 0.47058823529411764
+          },
+          "ControllerCheckoutCheckout-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "country()",
+            "similarity": 0.4444444444444444
+          },
+          "ControllerCheckoutShippingAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerAccountOrder-info()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "info()",
+            "similarity": 0.44
+          },
+          "ControllerCheckoutCart-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerAccountAccount-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerCheckoutCart-remove()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "remove()",
+            "similarity": 0.44
+          },
+          "ControllerAccountOrder-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerCheckoutCart-add()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "add()",
+            "similarity": 0.44
+          },
+          "ControllerAccountRegister-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerCheckoutPaymentAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "index()",
+            "similarity": 0.44
+          },
+          "ControllerExtensionTotalReward-reward()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "reward()",
+            "similarity": 0.4230769230769231
+          },
+          "ControllerExtensionTotalReward-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "index()",
+            "similarity": 0.4230769230769231
+          },
+          "ControllerCheckoutCheckout-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "customfield()",
+            "similarity": 0.4
+          }
+        }
+      },
+      "System prompts for billing, delivery details and payment method": {
+        "stepNumber": "2.",
+        "step": "System prompts for billing, delivery details and payment method",
+        "methods": {
+          "ControllerCheckoutPaymentMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "save()",
+            "similarity": 0.3333333333333333
+          },
+          "ControllerCheckoutPaymentMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "index()",
+            "similarity": 0.3148148148148148
+          }
+        }
+      },
+      "Customer enters the billing, delivery details and the payment method": {
+        "stepNumber": "3.",
+        "step": "Customer enters the billing, delivery details and the payment method",
+        "methods": {
+          "ControllerAccountRegister-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "validate()",
+            "similarity": 0.3090909090909091
+          },
+          "ControllerAccountRegister-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "customfield()",
+            "similarity": 0.2909090909090909
+          },
+          "ModelAccountCustomer-getIps($customer_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getIps($customer_id)",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutCart-edit()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "edit()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerAccountPassword-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "validate()",
+            "similarity": 0.2727272727272727
+          },
+          "ControllerCheckoutFailure-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/failure.php",
+            "className": "ControllerCheckoutFailure",
+            "methodName": "index()",
+            "similarity": 0.2545454545454545
+          },
+          "ControllerCheckoutShippingMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "index()",
+            "similarity": 0.2545454545454545
+          },
+          "ControllerCheckoutShippingMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "save()",
+            "similarity": 0.2545454545454545
+          },
+          "ControllerAccountOrder-reorder()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "reorder()",
+            "similarity": 0.2545454545454545
+          },
+          "ModelAccountCustomField-getCustomFields($customer_group_id = 0)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/custom_field.php",
+            "className": "ModelAccountCustomField",
+            "methodName": "getCustomFields($customer_group_id = 0)",
+            "similarity": 0.2545454545454545
+          },
+          "ModelExtensionExtension-getExtensions($type)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/extension/extension.php",
+            "className": "ModelExtensionExtension",
+            "methodName": "getExtensions($type)",
+            "similarity": 0.2545454545454545
+          },
+          "ModelCheckoutOrder-addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)",
+            "similarity": 0.2545454545454545
+          },
+          "ModelCheckoutOrder-deleteOrder($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "deleteOrder($order_id)",
+            "similarity": 0.2545454545454545
+          },
+          "ModelCheckoutOrder-editOrder($order_id, $data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "editOrder($order_id, $data)",
+            "similarity": 0.2545454545454545
+          },
+          "ModelCatalogInformation-getInformations()": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/information.php",
+            "className": "ModelCatalogInformation",
+            "methodName": "getInformations()",
+            "similarity": 0.23636363636363636
+          },
+          "ModelCatalogProduct-getTotalProductSpecials()": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getTotalProductSpecials()",
+            "similarity": 0.23636363636363636
+          },
+          "ModelCheckoutOrder-addOrder($data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "addOrder($data)",
+            "similarity": 0.23636363636363636
+          },
+          "ModelAccountOrder-getOrderTotals($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderTotals($order_id)",
+            "similarity": 0.23636363636363636
+          },
+          "ControllerAccountAccount-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.23636363636363636
+          },
+          "ModelCheckoutOrder-getOrder($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "getOrder($order_id)",
+            "similarity": 0.23636363636363636
+          }
+        }
+      },
+      "Customer confirms the order": {
+        "stepNumber": "6.",
+        "step": "Customer confirms the order",
+        "methods": {
+          "ModelAccountOrder-getOrderHistories($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderHistories($order_id)",
+            "similarity": 0.3333333333333333
+          },
+          "ModelAccountOrder-getOrderVouchers($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderVouchers($order_id)",
+            "similarity": 0.3191489361702128
+          },
+          "ModelAccountOrder-getOrderProducts($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderProducts($order_id)",
+            "similarity": 0.3191489361702128
+          },
+          "ModelCatalogProduct-getProductOptions($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductOptions($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProductDiscounts($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductDiscounts($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelAccountCustomField-getCustomField($custom_field_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/custom_field.php",
+            "className": "ModelAccountCustomField",
+            "methodName": "getCustomField($custom_field_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProductRelated($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductRelated($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelAccountCustomer-addCustomer($data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "addCustomer($data)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProductLayoutId($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductLayoutId($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProfiles($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProfiles($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProfile($product_id, $recurring_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProfile($product_id, $recurring_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelAccountCustomerGroup-getCustomerGroup($customer_group_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer_group.php",
+            "className": "ModelAccountCustomerGroup",
+            "methodName": "getCustomerGroup($customer_group_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelAccountCustomerGroup-getCustomerGroups()": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer_group.php",
+            "className": "ModelAccountCustomerGroup",
+            "methodName": "getCustomerGroups()",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogInformation-getInformation($information_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/information.php",
+            "className": "ModelCatalogInformation",
+            "methodName": "getInformation($information_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogInformation-getInformationLayoutId($information_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/information.php",
+            "className": "ModelCatalogInformation",
+            "methodName": "getInformationLayoutId($information_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getTotalProducts($data = array())": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getTotalProducts($data = array())",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProduct($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProduct($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProducts($data = array())": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProducts($data = array())",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProductSpecials($data = array())": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductSpecials($data = array())",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getLatestProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getLatestProducts($limit)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getPopularProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getPopularProducts($limit)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getBestSellerProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getBestSellerProducts($limit)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelCatalogProduct-getProductAttributes($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductAttributes($product_id)",
+            "similarity": 0.30434782608695654
+          },
+          "ModelAccountCustomer-getCustomer($customer_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getCustomer($customer_id)",
+            "similarity": 0.2978723404255319
+          },
+          "ModelAccountCustomer-getCustomerByCode($code)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getCustomerByCode($code)",
+            "similarity": 0.2916666666666667
+          },
+          "ModelAccountCustomer-getCustomerByToken($token)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getCustomerByToken($token)",
+            "similarity": 0.28
+          },
+          "ModelAccountCustomer-getLoginAttempts($email)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getLoginAttempts($email)",
+            "similarity": 0.2765957446808511
+          },
+          "ModelAccountCustomer-addLoginAttempt($email)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "addLoginAttempt($email)",
+            "similarity": 0.2608695652173913
+          },
+          "ModelAccountCustomer-getCustomerByEmail($email)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getCustomerByEmail($email)",
+            "similarity": 0.26
+          },
+          "ModelAccountCustomer-getRewardTotal($customer_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getRewardTotal($customer_id)",
+            "similarity": 0.2549019607843137
+          },
+          "ModelAccountOrder-getOrderProduct($order_id, $order_product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderProduct($order_id, $order_product_id)",
+            "similarity": 0.24615384615384617
+          },
+          "ModelAccountOrder-getOrderOptions($order_id, $order_product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrderOptions($order_id, $order_product_id)",
+            "similarity": 0.24615384615384617
+          },
+          "ModelAccountOrder-getTotalOrderProductsByOrderId($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getTotalOrderProductsByOrderId($order_id)",
+            "similarity": 0.24615384615384617
+          },
+          "ModelAccountOrder-getTotalOrderVouchersByOrderId($order_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getTotalOrderVouchersByOrderId($order_id)",
+            "similarity": 0.24615384615384617
+          },
+          "ModelAccountCustomer-getTotalCustomersByEmail($email)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "getTotalCustomersByEmail($email)",
+            "similarity": 0.24561403508771928
+          },
+          "ModelAccountActivity-addActivity($key, $data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/activity.php",
+            "className": "ModelAccountActivity",
+            "methodName": "addActivity($key, $data)",
+            "similarity": 0.21739130434782608
+          },
+          "ModelCatalogProduct-getCategories($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getCategories($product_id)",
+            "similarity": 0.21739130434782608
+          },
+          "ModelCatalogProduct-getProductImages($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductImages($product_id)",
+            "similarity": 0.21739130434782608
+          }
+        }
+      }
+    }
+  },
+  "Show Order Detail": {
+    "path": "/home/dash/Projects/berta/example/spec/Order/ShowOrderDetail.md",
+    "name": "Show Order Detail",
+    "steps": {
+      "Customer requests to show the order detail": {
+        "stepNumber": "1.",
+        "step": "Customer requests to show the order detail",
+        "methods": {
+          "ControllerCheckoutConfirm-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/confirm.php",
+            "className": "ControllerCheckoutConfirm",
+            "methodName": "index()",
+            "similarity": 0.4
+          }
+        }
+      }
+    }
+  },
+  "Use Reward Points": {
+    "path": "/home/dash/Projects/berta/example/spec/Order/UseRewardPoints.md",
+    "name": "Use Reward Points",
+    "steps": {
+      "Customer selects to use reward points": {
+        "stepNumber": "1.",
+        "step": "Customer selects to use reward points",
+        "methods": {
+          "ControllerExtensionTotalReward-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "index()",
+            "similarity": 0.7352941176470589
+          },
+          "ControllerExtensionTotalReward-reward()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "reward()",
+            "similarity": 0.7352941176470589
+          }
+        }
+      }
+    }
+  },
+  "Manage Cart - Add Product": {
+    "path": "/home/dash/Projects/berta/example/spec/ManageCart/AddProduct.md",
+    "name": "Manage Cart - Add Product",
+    "steps": {
+      "Customer selects to add the product into shopping cart": {
+        "stepNumber": "1.",
+        "step": "Customer selects to add the product into shopping cart",
+        "methods": {
+          "ControllerCheckoutShippingAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "index()",
+            "similarity": 0.42857142857142855
+          },
+          "ControllerCheckoutPaymentAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "index()",
+            "similarity": 0.42857142857142855
+          },
+          "ControllerExtensionTotalReward-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "index()",
+            "similarity": 0.42857142857142855
+          },
+          "ControllerExtensionTotalReward-reward()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "reward()",
+            "similarity": 0.42857142857142855
+          },
+          "ControllerCheckoutSuccess-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/success.php",
+            "className": "ControllerCheckoutSuccess",
+            "methodName": "index()",
+            "similarity": 0.40476190476190477
+          },
+          "ControllerAccountPassword-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "index()",
+            "similarity": 0.40476190476190477
+          },
+          "ControllerCheckoutShippingAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "save()",
+            "similarity": 0.40476190476190477
+          },
+          "ControllerCheckoutPaymentAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "save()",
+            "similarity": 0.40476190476190477
+          }
+        }
+      },
+      "System prompts for quantity and other product attributes": {
+        "stepNumber": "2.",
+        "step": "System prompts for quantity and other product attributes",
+        "methods": {
+          "ModelCatalogProduct-getProductAttributes($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductAttributes($product_id)",
+            "similarity": 0.4
+          }
+        }
+      },
+      "Customer enters the quantity and the attributes": {
+        "stepNumber": "3.",
+        "step": "Customer enters the quantity and the attributes",
+        "methods": {
+          "ControllerCheckoutConfirm-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/confirm.php",
+            "className": "ControllerCheckoutConfirm",
+            "methodName": "index()",
+            "similarity": 0.37142857142857144
+          },
+          "ModelAccountCustomField-getCustomFields($customer_group_id = 0)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/custom_field.php",
+            "className": "ModelAccountCustomField",
+            "methodName": "getCustomFields($customer_group_id = 0)",
+            "similarity": 0.37142857142857144
+          },
+          "ModelAccountOrder-getOrders($start = 0, $limit = 20)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getOrders($start = 0, $limit = 20)",
+            "similarity": 0.37142857142857144
+          },
+          "ModelAccountOrder-getTotalOrders()": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/order.php",
+            "className": "ModelAccountOrder",
+            "methodName": "getTotalOrders()",
+            "similarity": 0.37142857142857144
+          },
+          "ControllerAccountOrder-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "index()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerCheckoutCheckout-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "index()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerCheckoutCart-remove()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "remove()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerAccountOrder-info()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "info()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerCheckoutCart-add()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "add()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerCheckoutCart-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "index()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerAccountAccount-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.34285714285714286
+          },
+          "ControllerAccountRegister-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "index()",
+            "similarity": 0.34285714285714286
+          }
+        }
+      },
+      "System saves the product into shopping cart": {
+        "stepNumber": "4.",
+        "step": "System saves the product into shopping cart",
+        "methods": {
+          "ControllerCheckoutPaymentMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "save()",
+            "similarity": 0.38235294117647056
+          },
+          "ControllerCheckoutShippingMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "save()",
+            "similarity": 0.38235294117647056
+          }
+        }
+      }
+    }
+  },
+  "Manage Cart - Remove Product": {
+    "path": "/home/dash/Projects/berta/example/spec/ManageCart/RemoveProduct.md",
+    "name": "Manage Cart - Remove Product",
+    "steps": {
+      "User selects to remove a product from shopping cart": {
+        "stepNumber": "1.",
+        "step": "User selects to remove a product from shopping cart",
+        "methods": {
+          "ControllerAccountOrder-info()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "info()",
+            "similarity": 0.36585365853658536
+          },
+          "ControllerAccountOrder-reorder()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "reorder()",
+            "similarity": 0.36585365853658536
+          },
+          "ControllerCheckoutCart-add()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "add()",
+            "similarity": 0.36585365853658536
+          }
+        }
+      },
+      "System removes the product": {
+        "stepNumber": "2.",
+        "step": "System removes the product",
+        "methods": {
+          "ControllerExtensionTotalReward-reward()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "reward()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerExtensionTotalReward-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/extension/total/reward.php",
+            "className": "ControllerExtensionTotalReward",
+            "methodName": "index()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutCart-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "index()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutShippingMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "save()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutCheckout-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "index()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutShippingAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "save()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutConfirm-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/confirm.php",
+            "className": "ControllerCheckoutConfirm",
+            "methodName": "index()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutPaymentMethod-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "save()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutPaymentAddress-save()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "save()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutCart-remove()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "remove()",
+            "similarity": 0.45454545454545453
+          },
+          "ControllerCheckoutPaymentMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_method.php",
+            "className": "ControllerCheckoutPaymentMethod",
+            "methodName": "index()",
+            "similarity": 0.4444444444444444
+          },
+          "ModelCatalogProduct-getProductRelated($product_id)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductRelated($product_id)",
+            "similarity": 0.4090909090909091
+          },
+          "ModelCatalogProduct-getBestSellerProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getBestSellerProducts($limit)",
+            "similarity": 0.4090909090909091
+          },
+          "ModelCatalogProduct-getPopularProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getPopularProducts($limit)",
+            "similarity": 0.4090909090909091
+          },
+          "ModelCatalogProduct-getLatestProducts($limit)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getLatestProducts($limit)",
+            "similarity": 0.4090909090909091
+          },
+          "ModelCatalogProduct-getProductSpecials($data = array())": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProductSpecials($data = array())",
+            "similarity": 0.4090909090909091
+          },
+          "ModelCatalogProduct-getProducts($data = array())": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/catalog/product.php",
+            "className": "ModelCatalogProduct",
+            "methodName": "getProducts($data = array())",
+            "similarity": 0.4090909090909091
+          }
+        }
+      },
+      "Include \"Show Cart\"": {
+        "stepNumber": "3.",
+        "step": "Include \"Show Cart\"",
+        "methods": {
+          "ControllerCheckoutCart-edit()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/cart.php",
+            "className": "ControllerCheckoutCart",
+            "methodName": "edit()",
+            "similarity": 0.3448275862068966
+          },
+          "ControllerAccountAccount-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountAccount-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/account.php",
+            "className": "ControllerAccountAccount",
+            "methodName": "country()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountOrder-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/order.php",
+            "className": "ControllerAccountOrder",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountPassword-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountPassword-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/password.php",
+            "className": "ControllerAccountPassword",
+            "methodName": "validate()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountRegister-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountRegister-validate()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "validate()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerAccountRegister-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/account/register.php",
+            "className": "ControllerAccountRegister",
+            "methodName": "customfield()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutSuccess-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/success.php",
+            "className": "ControllerCheckoutSuccess",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutCheckout-country()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "country()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutCheckout-customfield()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/checkout.php",
+            "className": "ControllerCheckoutCheckout",
+            "methodName": "customfield()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutPaymentAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/payment_address.php",
+            "className": "ControllerCheckoutPaymentAddress",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutShippingAddress-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_address.php",
+            "className": "ControllerCheckoutShippingAddress",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ControllerCheckoutShippingMethod-index()": {
+            "path": "/home/dash/Projects/berta/example/implementation/controller/checkout/shipping_method.php",
+            "className": "ControllerCheckoutShippingMethod",
+            "methodName": "index()",
+            "similarity": 0.29411764705882354
+          },
+          "ModelCheckoutOrder-addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/checkout/order.php",
+            "className": "ModelCheckoutOrder",
+            "methodName": "addOrderHistory($order_id, $order_status_id, $comment = '', $notify = false, $override = false)",
+            "similarity": 0.29411764705882354
+          },
+          "ModelAccountCustomer-addCustomer($data)": {
+            "path": "/home/dash/Projects/berta/example/implementation/model/account/customer.php",
+            "className": "ModelAccountCustomer",
+            "methodName": "addCustomer($data)",
+            "similarity": 0.29411764705882354
+          }
+        }
       }
     }
   }

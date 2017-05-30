@@ -1,12 +1,13 @@
 /* SETTINGS */
 var compare = [
-    'Output-direct-simple.json',
-    'Output-direct-advanced.json',
-    'Output-issue-simple.json',
-    'Output-issue-advanced.json'
+    'Output.json'
+/*    'Output-direct-simple.json',*/
+    //'Output-direct-advanced.json',
+    //'Output-issue-simple.json',
+    /*'Output-issue-advanced.json'*/
 ];
 
-var similarityAbove = 0.8;
+var similarityAbove = 0;
 
 /* END SETTINGS */
 
