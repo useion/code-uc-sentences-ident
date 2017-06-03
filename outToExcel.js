@@ -1,13 +1,19 @@
 /* SETTINGS */
 var compare = [
     'Output.json'
-/*    'Output-direct-simple.json',*/
+    /*'Output-direct-simple.json',*/
     //'Output-direct-advanced.json',
     //'Output-issue-simple.json',
-    /*'Output-issue-advanced.json'*/
+    //'Output-issue-advanced.json',
+        //'Output-m-orig.json',
+        //'Output-m-orig-synon.json',
+        //'Output-m-orig-synon-hyper.json',
+        //'Output-m-orig-synon-hyper-hypo.json'
+
+
 ];
 
-var similarityAbove = 0;
+var similarityAbove = 50;
 
 /* END SETTINGS */
 
@@ -150,7 +156,11 @@ function gen () {
 
                     for (var k in compare) {
 
-                        if (methodsMerged[className][methodName][k] < similarityAbove)
+                        var cmpr = methodsMerged[className][methodName][k];
+                        if (0 < methodsMerged[className][methodName][k] && methodsMerged[className][methodName][k] < 1) {
+                            cmpr = cmpr*100;
+                        }
+                        if (cmpr < similarityAbove)
                             continue;
 
 
